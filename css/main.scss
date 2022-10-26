@@ -1,6 +1,10 @@
 @font-face {
-    font-family: 'font';
-    src: url('../fonts/NovitoNova-Thin.otf') format('opentype');
+    font-family: 'f300';
+    src: url('../fonts/gothampro_light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'f400';
+    src: url('../fonts/gothampro_medium.ttf') format('truetype');
 }
 
 @import '_var';
@@ -35,7 +39,7 @@ h1, h2, h3, h4, h5, h6{
 input,
 select,
 textarea {
-    font-family: $fonth;
+    font-family: $f300;
 }
 
 p{
@@ -107,7 +111,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     color: $black;
-    font-family: $font;
+    font-family: $f300;
     font-size: 16px;
     line-height: 24px;
     box-sizing: border-box;
@@ -150,7 +154,7 @@ body{
 .header-nav {
 
     &__link {
-        font-family: $fonth;
+        font-family: $f300;
         font-weight: 300;
         font-size: 20px;
         line-height: 23px;
@@ -181,7 +185,7 @@ body{
 .header-contact {
     @extend %flex;
     &__tel {
-        font-family: $fonth;
+        font-family: $f400;
         font-weight: 300;
         font-size: 20px;
         line-height: 23px;

@@ -1,17 +1,14 @@
 $transition: all 0.2s ease-in-out;
 $transition05: all 0.5s ease-in-out;
-$font: 'font';
-$fonth: 'Montserrat', sans-serif;
+$f300: 'f300';
+$f400: 'f400';
 
 $black: #000;
 $green: #709D5C;
 $white: #fff;
 
 
-%fonth{
-    font-family: $fonth;
-    letter-spacing: -1px;
-}
+
 
 %flex{
     display: flex;
