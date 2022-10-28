@@ -130,10 +130,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  color: #000;
-  font-family: "f";
-  font-size: 16px;
-  line-height: 24px;
+  color: #272727;
+  font-family: "f300";
+  font-size: 18px;
+  line-height: 21px;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -146,15 +146,15 @@ body {
 /*end fixed footer*/
 .container {
   margin: 0 auto;
-  width: 1176px;
+  width: 1180px;
 }
 
 .header {
-  height: 91px;
-  background: #709D5C;
   position: relative;
-  margin-bottom: 120px;
-  z-index: 10;
+  padding: 18px 0;
+}
+.header .container {
+  border-bottom: 2px solid #272727;
 }
 
 .header-menu {
@@ -164,12 +164,20 @@ body {
   display: none;
 }
 
+.header-logo {
+  display: flex;
+  width: 139px;
+  height: 139px;
+  background-image: url(../img/logo.png);
+  background-position: center center;
+  background-size: cover;
+}
+
 .header-nav__link {
   font-family: "f300";
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 23px;
-  color: #fff;
+  color: #272727;
+  font-size: 18px;
+  line-height: 17px;
   margin-right: 85px;
   position: relative;
   text-transform: uppercase;
@@ -197,7 +205,6 @@ body {
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
-  color: #fff;
   margin-right: 38px;
 }
 .header-contact__tel:before {
