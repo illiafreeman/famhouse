@@ -28,6 +28,7 @@ $(document).ready(function() {
     /*end scroll to top*/
     $('#slick_1').slick({
         slidesToShow: 1,
+        fade: true,
     });
 });
 
