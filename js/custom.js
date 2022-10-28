@@ -26,6 +26,9 @@ $(document).ready(function() {
         return false;
     });
     /*end scroll to top*/
+    $('#slick_1').slick({
+        slidesToShow: 1,
+    });
 });
 
 
