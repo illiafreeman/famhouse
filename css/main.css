@@ -244,8 +244,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 120px 0;
-  margin-bottom: 120px;
+  padding: 20px 0;
 }
 .article_df {
   display: flex;
