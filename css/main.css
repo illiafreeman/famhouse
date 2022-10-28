@@ -318,7 +318,21 @@ body {
   align-items: center;
 }
 
-.slick-initialized .slick-slide, .slick-track {
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slick-slide div div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+
+.slick-track {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,10 +359,22 @@ body {
 }
 
 .slick-prev, .slick-next {
-  width: 40px;
-  height: 40px;
-  background: #709D5C;
+  width: 78px;
+  height: 78px;
+  background-color: #fff;
+  background-image: url(../img/arr_left.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
   z-index: 100;
+  border-radius: 50%;
+  border: 1px solid #85ADD2;
+  transition: all 0.2s ease-in-out;
+}
+.slick-prev:before, .slick-next:before {
+  display: none;
+}
+.slick-prev:hover, .slick-next:hover {
+  background-color: #85ADD2;
 }
 
 @media only screen and (max-width: 1200px) {
