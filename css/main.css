@@ -433,6 +433,19 @@ body {
 .article-col_reverce .article-col__info {
   order: 2;
 }
+.article-col_advantage {
+  align-items: stretch;
+}
+.article-col_advantage .article-col__pic {
+  margin: 0 94px 0 0;
+}
+.article-col__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-col__info_advantage {
+  gap: 10px 80px;
+}
 .article-col__list {
   display: flex;
   flex-direction: column;
@@ -465,8 +478,10 @@ body {
   margin-left: 60px;
 }
 .article-col__desc {
-  width: 330px;
+  width: 370px;
   margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 27px;
 }
 .collection {
   display: flex;
@@ -562,6 +577,10 @@ body {
   color: #fff;
 }
 
+.advantage {
+  width: calc(50% - 40px);
+  border-top: 1px solid #272727;
+}
 @media only screen and (max-width: 1200px) {
   .container {
     width: 100%;

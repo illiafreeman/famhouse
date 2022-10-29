@@ -339,12 +339,22 @@ body{
     }
 
     &_advantage {
+        align-items: stretch;
+        .article-col__pic{
+            margin: 0 94px 0 0;
+        }
     }
 
     &_start {
     }
 
     &__info {
+        display: flex;
+        flex-wrap: wrap;
+        &_advantage{
+            gap: 10px 80px;
+        }
+        
     }
 
     &__list {
@@ -383,8 +393,10 @@ body{
     }
 
     &__desc {
-        width: 330px;
+        width: 370px;
         margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 27px;
     }
 
     &__tel {
@@ -495,7 +507,8 @@ body{
     }
 }
 .advantage {
-
+    width: calc(50% - 40px);
+    border-top: 1px solid $black;
     &__num {
     }
 
