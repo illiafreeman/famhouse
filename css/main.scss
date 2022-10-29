@@ -258,8 +258,11 @@ body{
 }
 
 .article {
-
+    margin-bottom: 140px;
     &_bg {
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 .container {
@@ -270,15 +273,29 @@ body{
 .intro {
 
     &__pic {
+        margin-bottom: 120px;
     }
 
     &__desc {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__desc-item {
+        width: 315px;
     }
 
     &__desc-title {
+        font-size: 63px;
+        line-height: 48px;
+        text-transform: uppercase;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $black;
+        margin-bottom: 16px;
+        span{
+            font-size: 24px;
+            line-height: 21px;
+        }
     }
 
     &__desc-desc {
@@ -291,6 +308,9 @@ body{
     margin-bottom: 40px;
     font-weight: 600;
     &_h2 {
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 40px;
     }
 
     &_h3 {
@@ -300,8 +320,19 @@ body{
     }
 }
 .article-col {
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
     &_reverce {
+        align-items: flex-start;
+        .article-col__pic{
+            order: 1;
+            margin: 0 100px 0 0;
+        }
+        .article-col__info{
+            order: 2;
+        }
     }
 
     &_advantage {
@@ -314,9 +345,35 @@ body{
     }
 
     &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            line-height: 27px;
+            &:before{
+                content: '';
+                display: block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $black;
+                margin-right: 16px;
+            }
+        }
+        &_border{
+            li{
+                border-bottom: 1px solid #272727;
+                padding-bottom: 20px;
+            }
+        }
     }
 
     &__pic {
+        width: 580px;
+        margin-left: 100px;
     }
 
     &__desc {
