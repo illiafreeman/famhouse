@@ -147,6 +147,7 @@ body {
 .header {
   position: relative;
   padding: 18px 0 0;
+  margin-bottom: 104px;
 }
 .header .container {
   border-bottom: 1px solid #272727;
@@ -369,6 +370,13 @@ body {
   fill: #85ADD2;
 }
 
+.title {
+  font-size: 63px;
+  line-height: 66px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
 @media only screen and (max-width: 1200px) {
   .header__container, .container, .footer__container {
     width: 100%;

@@ -43,6 +43,7 @@ body{
 .header{
     position: relative;
     padding: 18px 0 0;
+    margin-bottom: 104px;
     .container{
         border-bottom: 1px solid #272727;
         padding: 0 0 18px;
@@ -253,6 +254,120 @@ body{
         height: 12px;
         transition: $transition;
         fill: #85ADD2;
+    }
+}
+
+.article {
+
+    &_bg {
+    }
+}
+.container {
+
+    &_border {
+    }
+}
+.intro {
+
+    &__pic {
+    }
+
+    &__desc {
+    }
+
+    &__desc-item {
+    }
+
+    &__desc-title {
+    }
+
+    &__desc-desc {
+    }
+}
+.title {
+    font-size: 63px;
+    line-height: 66px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 600;
+    &_h2 {
+    }
+
+    &_h3 {
+    }
+
+    &_condition {
+    }
+}
+.article-col {
+
+    &_reverce {
+    }
+
+    &_advantage {
+    }
+
+    &_start {
+    }
+
+    &__info {
+    }
+
+    &__list {
+    }
+
+    &__pic {
+    }
+
+    &__desc {
+    }
+
+    &__tel {
+    }
+
+    &__about {
+    }
+}
+.collection {
+
+    &__pic {
+    }
+
+    &__info {
+    }
+
+    &__desc {
+    }
+}
+.more {
+}
+.form {
+
+    &__button {
+    }
+}
+.advantage {
+
+    &__num {
+    }
+
+    &__desc {
+    }
+}
+.condition {
+
+    &__desc {
+    }
+
+    &__item {
+    }
+}
+.bottom-contact {
+
+    &__tel {
+    }
+
+    &__soc {
     }
 }
 
