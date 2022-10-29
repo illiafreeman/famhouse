@@ -42,14 +42,16 @@ body{
 }
 .header{
     position: relative;
-    padding: 18px 0;
+    padding: 18px 0 0;
     .container{
-        border-bottom: 2px solid #272727;
+        border-bottom: 1px solid #272727;
+        padding: 0 0 18px;
     }
 }
 .header-menu {
-    @extend %flex;
-    padding: 35px 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     &__btn {
         display: none;
     }
@@ -57,19 +59,29 @@ body{
 .header-logo{
     display: flex;
     width: 139px;
+    max-width: 139px;
     height: 139px;
     background-image: url(../img/logo.png);
     background-position: center center;
     background-size: cover;
 }
+.header-navgroup{
+    display: flex;
+    justify-content: flex-end;
+    gap: 120px;
+}
+.header-col {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-start;
+}
 .header-nav {
-
+    display: flex;
+    gap: 86px;
     &__link {
-        font-family: $f300;
-        color: $black;
         font-size: 18px;
         line-height: 17px;
-        margin-right: 85px;
         position: relative;
         text-transform: uppercase;
         &:last-child{
@@ -80,9 +92,9 @@ body{
             width: 0;
             height: 1px;
             position: absolute;
-            bottom: -3px;
+            bottom: -5px;
             right: 0;
-            background: #fff;
+            background: #979797;
             transition: $transition;
         }
         &:hover{
@@ -94,21 +106,20 @@ body{
     }
 }
 .header-contact {
-    @extend %flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__tel {
-        font-family: $f400;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 23px;
-        margin-right: 38px;
+        font-size: 18px;
+        line-height: 17px;
         &:before {
             content: "";
             width: 0;
             height: 1px;
             position: absolute;
-            bottom: -3px;
+            bottom: -5px;
             right: 0;
-            background: #fff;
+            background: #979797;
             transition: $transition;
         }
         &:hover{
@@ -120,11 +131,12 @@ body{
     }
 
     &__soc {
-        margin-right: 18px;
         transition: $transition;
-        display: block;
         width: 48px;
         height: 48px;
+        border: 1.5px solid #272727;
+        border-radius:  50%;
+        @extend %flex-c;
         &:hover{
             transform: scale(1.1);
         }
@@ -132,78 +144,18 @@ body{
             margin: 0;
         }
         svg{
-            width: 48px;
-            height: 48px;
-            fill: #fff
+            width: 26px;
+            height: 26px;
+            fill: #fff;
         }
-    }
-}
-.article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    &_df{
-        display: flex;
-        justify-content: space-between;
-    }
-    &_mark{
-        background: #EDE7DD;
-        padding: 68px 0;
-        position: relative;
-        &:after, &:before{
-            @extend %after;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            width: 100%;
-            height: 120px;
-        }
-        &:after{
-            background-image: url(../img/bg_brown_bottom.png);
-            background-position: center bottom;
-            top: 100%;
-        }
-        &:before{
-            background-image: url(../img/bg_brown_top.png);
-            background-position: center top;
-            bottom: 100%;
-        }
-        .container{
+        &-wrap{
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            width: 900px;
-            h2{
-                font-size: 84px;
-                line-height: 84px;
-                margin: 0;
-                span{
-                    color: #709D5C;
-                }
-            }
-        }
-    }
-    &__text {
-        width: 620px;
-    }
-    &__pic{
-        width: 480px;
-    }
-    &_chat{
-        width: 100%;
-        display: block;
-        padding: 110px 44px 0 448px; 
-        margin: 260px 0;
-        &-1{
-            height: 709px;
-            background-image: url(../img/chat_1.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: contain;
+            justify-content: flex-end;
+            gap: 18px;
         }
     }
 }
+
 .modal{
     position: fixed;
     top: 0;

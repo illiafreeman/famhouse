@@ -19,32 +19,41 @@
     <link href="css/slick-theme.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
 </head>
-<body class="oh">
+<body class="">
 <header class="header">
     <div class="container">
         <div class="header-menu">
             <a href="" class="header-logo"></a>
-            <nav class="header-nav">
-                <a class="header-nav__link" href="">ПРОДУКЦИЯ</a>
-                <a class="header-nav__link" href="">КОЛЛЕКЦИИ</a>
-                <a class="header-nav__link" href="">Условия работы</a>
-                <a class="header-nav__link" href="">МЕРОПРИЯТИЯ</a>
-                <a class="header-nav__link" href="">О НАС</a>
-                <a class="header-nav__link" href="">КОНТАКТЫ</a>
-            </nav>
-            <nav class="header-contact">
-                <a class="header-contact__soc" href="">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#icon-wa"></use>
-                    </svg>
-                </a>
-                <a class="header-contact__soc" href="">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#icon-te"></use>
-                    </svg>
-                </a>
-                <a class="header-contact__tel" href="callto:+79566477474">+7 956 647 74 74</a>
-            </nav>
+            <div class="header-navgroup">
+                <nav class="header-nav">
+                    <div class="header-col">
+                        <a class="header-nav__link" href="">ПРОДУКЦИЯ</a>
+                        <a class="header-nav__link" href="">КОЛЛЕКЦИИ</a>
+                        <a class="header-nav__link" href="">Условия работы</a>
+                    </div>
+                    <div class="header-col">
+                        <a class="header-nav__link" href="">МЕРОПРИЯТИЯ</a>
+                        <a class="header-nav__link" href="">О НАС</a>
+                        <a class="header-nav__link" href="">КОНТАКТЫ</a>
+                    </div>
+                </nav>
+                <nav class="header-contact">
+                    <div class="header-contact__soc-wrap">
+                        <a class="header-contact__soc" href="">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-wa"></use>
+                            </svg>
+                        </a>
+                        <a class="header-contact__soc" href="">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-te"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="header-contact__tel" href="callto:+79566477474">+7 956 647 74 74</a>
+                </nav>
+            </div>
+            
             <div class="header-menu__btn"></div>
         </div>
     </div>
