@@ -377,10 +377,14 @@ body{
     &__pic {
         width: 580px;
         margin-left: 100px;
-        
+        &_min{
+            margin-left: 60px;
+        }
     }
 
     &__desc {
+        width: 330px;
+        margin-bottom: 30px;
     }
 
     &__tel {
@@ -455,8 +459,39 @@ body{
     }
 }
 .form {
-
+    &__input {
+        display: flex;
+        width: 510px;
+        height: 62px;
+        align-items: center;
+        border-radius: 31px;
+        padding: 0 28px;
+        border: 1px solid #272727;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 22px;
+        background: transparent;
+    }
     &__button {
+        display: flex;
+        height: 62px;
+        align-items: center;
+        border-radius: 31px;
+        padding: 0 28px;
+        border: 1px solid #272727;
+        background: transparent;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 300;
+        font-family: "f300";
+        transition: $transition;
+        &:hover{
+            border: 1px solid #85ADD2;
+            background: #85ADD2;
+            color: #fff;
+        }
     }
 }
 .advantage {
