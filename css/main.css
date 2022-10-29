@@ -316,6 +316,7 @@ body {
   background: #fff;
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .close {
@@ -363,8 +364,17 @@ body {
   height: 100%;
 }
 .slick-slide img {
-  max-height: 700px;
+  max-height: 450px;
   max-width: 580px;
+  margin-bottom: 40px;
+}
+.slick-slide div {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  max-width: 600px;
+  text-align: center;
 }
 
 .slider {
