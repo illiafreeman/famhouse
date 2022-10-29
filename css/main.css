@@ -362,9 +362,6 @@ body {
   width: 78px;
   height: 78px;
   background-color: #fff;
-  background-image: url(../img/arr_left.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
   z-index: 100;
   border-radius: 50%;
   border: 1px solid #85ADD2;
@@ -375,6 +372,16 @@ body {
 }
 .slick-prev:hover, .slick-next:hover {
   background-color: #85ADD2;
+}
+.slick-prev:hover svg, .slick-next:hover svg {
+  fill: #fff;
+  fill-opacity: 90%;
+}
+.slick-prev svg, .slick-next svg {
+  width: 28px;
+  height: 12px;
+  transition: all 0.2s ease-in-out;
+  fill: #85ADD2;
 }
 
 @media only screen and (max-width: 1200px) {

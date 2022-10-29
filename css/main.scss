@@ -253,9 +253,6 @@ body{
     width: 78px;
     height: 78px;
     background-color: #fff;
-    background-image: url(../img/arr_left.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
     z-index: 100;
     border-radius: 50%;
     border: 1px solid #85ADD2;
@@ -265,6 +262,16 @@ body{
     }
     &:hover{
         background-color: #85ADD2;
+        svg{
+            fill: #fff;
+            fill-opacity: 90%;
+        }
+    }
+    svg{
+        width: 28px;
+        height: 12px;
+        transition: $transition;
+        fill: #85ADD2;
     }
 }
 
