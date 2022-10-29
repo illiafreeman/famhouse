@@ -314,6 +314,9 @@ body{
     }
 
     &_h3 {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 22px;
     }
 
     &_condition {
@@ -374,6 +377,7 @@ body{
     &__pic {
         width: 580px;
         margin-left: 100px;
+        
     }
 
     &__desc {
@@ -386,17 +390,31 @@ body{
     }
 }
 .collection {
-
+    display: flex;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #272727;
+    &:last-child{
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
     &__pic {
+        margin-right: 100px;
     }
 
     &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__desc {
+        
     }
 }
 .more {
+    display: flex;
 }
 .form {
 
