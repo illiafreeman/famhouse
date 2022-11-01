@@ -510,9 +510,16 @@ body{
     width: calc(50% - 40px);
     border-top: 1px solid $black;
     &__num {
+        font-size: 63px;
+        line-height: 67px;
+        font-weight: 600;
+        margin: 40px 0 22px 0;
     }
 
     &__desc {
+    }
+    &:nth-child(3), &:nth-child(4){
+        border-bottom: 1px solid $black;
     }
 }
 .condition {
