@@ -320,6 +320,9 @@ body{
     }
 
     &_condition {
+        margin: 0 80px 0 0;
+        width: 425px;
+        min-width: 425px;
     }
 }
 .article-col {
@@ -523,8 +526,10 @@ body{
     }
 }
 .condition {
-
+    display: flex;
     &__desc {
+        display: flex;
+        gap: 46px;
     }
 
     &__item {
@@ -538,10 +543,45 @@ body{
     &__soc {
     }
 }
-
-
-
-
+.connect{
+    font-weight: 600;
+    width: 100%;
+    font-size: 22px;
+    border-top: 1px solid $black;
+    padding-top: 50px;
+}
+.article-col__tel{
+    font-size: 32px;
+    line-height: 27px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 50px;
+    position: relative;
+    &:before {
+        content: "";
+        width: 0;
+        height: 1px;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        background: #979797;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover::before {
+        width: 100%;
+        left: 0;
+      }
+}
+.last{
+    margin: 50px 0 0;
+    font-size: 24px;
+    line-height: 27px;
+    width: 100%;
+}
+.qw{
+    align-items: flex-start;
+    flex-direction: column
+}
 
 
 
