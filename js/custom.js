@@ -33,10 +33,12 @@ $(document).ready(function() {
     $('.more').click(function(){
         $('body').addClass('oh');
         $('.modal').addClass('vis');
+        $('.scroll-top').addClass('none');
     });
     $('.close').click(function(){
         $('body').removeClass('oh');
         $('.modal').removeClass('vis');
+        $('.scroll-top').removeClass('none');
     });
     $(".phone").mask("+7 (999) 999-99-99");
 });

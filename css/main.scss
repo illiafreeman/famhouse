@@ -698,7 +698,40 @@ body{
         align-items: center;
     }
 }
-
+.scroll-top {
+    position: fixed;
+    bottom: -30px;
+    right: 30px;
+    width: 78px;
+    height: 78px;
+    z-index: 100;
+    border-radius: 50%;
+    border: 1px solid #85ADD2;
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transform: rotate(90deg);
+    @extend %flex-c;
+    svg{
+        width: 28px;
+        height: 12px;
+        transition: all 0.2s ease-in-out;
+        fill: #85ADD2;
+    }
+    &.vis {
+        bottom: 50px;
+        right: 30px;
+        opacity: 1;
+        z-index: 6;
+    }
+    &.none {
+        display: none;
+    }
+    &:hover{
+        transform: rotate(90deg) scale(1.1);
+    }
+}
 
 
 
