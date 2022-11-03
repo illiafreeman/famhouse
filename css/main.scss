@@ -320,6 +320,12 @@ body{
 .container {
 
     &_border {
+        border-top: 1px solid $black;
+        padding-top: 40px;
+    }
+    &_borderb {
+        border-bottom: 1px solid $black;
+        padding-bottom: 120px;
     }
 }
 .intro {

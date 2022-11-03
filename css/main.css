@@ -424,6 +424,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.container_border {
+  border-top: 1px solid #272727;
+  padding-top: 40px;
+}
+.container_borderb {
+  border-bottom: 1px solid #272727;
+  padding-bottom: 120px;
+}
+
 .intro__pic {
   margin-bottom: 120px;
 }
