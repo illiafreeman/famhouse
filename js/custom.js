@@ -30,6 +30,14 @@ $(document).ready(function() {
         slidesToShow: 1,
         fade: true,
     });
+    $('.more').click(function(){
+        $('body').addClass('oh');
+        $('.modal').addClass('vis');
+    });
+    $('.close').click(function(){
+        $('body').removeClass('oh');
+        $('.modal').removeClass('vis');
+    });
 });
 
 

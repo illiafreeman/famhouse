@@ -292,6 +292,7 @@ body {
   height: 26px;
   fill: #fff;
   transition: all 0.2s ease-in-out;
+  stroke: #272727 !important;
 }
 .header-contact__soc-wrap {
   display: flex;
@@ -309,7 +310,13 @@ body {
   background: #fff;
   display: flex;
   align-items: center;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.modal.vis {
+  opacity: 1;
+  visibility: visible;
 }
 
 .close {
@@ -682,6 +689,19 @@ body {
   width: 26px;
   height: 26px;
   fill: #fff;
+  stroke: #272727 !important;
+  transition: all 0.2s ease-in-out;
+}
+.bottom-contact__soc:hover {
+  border-color: #85ADD2;
+  background: #85ADD2;
+}
+.bottom-contact__soc:hover svg {
+  fill: #85ADD2;
+  stroke: #ffffff !important;
+}
+.bottom-contact__soc:hover svg path {
+  stroke: #fff !important;
 }
 
 .connect {

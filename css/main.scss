@@ -193,7 +193,7 @@ body{
             height: 26px;
             fill: #fff;
             transition: $transition;
-            
+            stroke: #272727 !important;
         }
         &-wrap{
             display: flex;
@@ -213,7 +213,13 @@ body{
     background: #fff;
     display: flex;
     align-items: center;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+    &.vis{
+        opacity: 1;
+        visibility: visible;
+    }
 }
 .close{
     width: 48px;
@@ -622,6 +628,20 @@ body{
             width: 26px;
             height: 26px;
             fill: #fff;
+            stroke: #272727 !important;
+            transition: $transition;
+        }
+        &:hover{
+            border-color: #85ADD2;
+            background: #85ADD2;
+            svg{
+                fill: #85ADD2;
+                stroke: #ffffff !important;
+                path{
+                    stroke: #fff !important;
+                }
+                
+            }
         }
     }
 }
