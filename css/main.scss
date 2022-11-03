@@ -635,7 +635,7 @@ body{
         svg {
             width: 26px;
             height: 26px;
-            fill: #fff;
+            fill: transparent;
             stroke: #272727 !important;
             transition: $transition;
         }
@@ -738,6 +738,35 @@ body{
     }
     &:hover{
         transform: rotate(90deg) scale(1.1);
+    }
+    &2{
+        &.vis {
+            bottom: 150px;
+            right: 30px;
+            opacity: 1;
+            z-index: 6;
+            background: #85ADD2;
+            svg{
+                fill: #fff;
+            }
+        }
+    }
+    &3{
+        &.vis {
+            bottom: 250px;
+            right: 30px;
+            opacity: 1;
+            z-index: 6;
+            svg{
+                fill: #85ADD2;
+            }
+        }
+        &:hover{
+            background: #85ADD2;
+            svg{
+                fill: #fff;
+            }
+        }
     }
 }
 
