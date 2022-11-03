@@ -145,17 +145,17 @@ body {
 }
 .footer__copy a:before {
   content: "";
-  width: 0;
+  width: 100%;
+  left: 0;
   height: 1px;
   position: absolute;
   bottom: -5px;
-  right: 0;
   background: #979797;
   transition: all 0.2s ease-in-out;
 }
 .footer__copy a:hover:before {
-  width: 100%;
-  left: 0;
+  width: 0;
+  right: 0;
 }
 .footer__logo {
   display: flex;
