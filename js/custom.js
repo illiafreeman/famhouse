@@ -38,6 +38,7 @@ $(document).ready(function() {
         $('body').removeClass('oh');
         $('.modal').removeClass('vis');
     });
+    $(".phone").mask("+7 (999) 999-99-99");
 });
 
 
