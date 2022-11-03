@@ -825,6 +825,7 @@ body {
 }
 .scroll-top3:hover {
   background: #85ADD2;
+  transform: rotate(90deg) scale(1);
 }
 .scroll-top3:hover svg {
   fill: #fff;
