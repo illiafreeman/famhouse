@@ -136,6 +136,35 @@ body {
 
 .footer {
   margin: auto auto 0 auto;
+  padding: 60px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copy a:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  background: #979797;
+  transition: all 0.2s ease-in-out;
+}
+.footer__copy a:hover:before {
+  width: 100%;
+  left: 0;
+}
+.footer__logo {
+  display: flex;
+  width: 180px;
+  max-width: 180px;
+  height: 180px;
+  background-image: url(../img/logo.png);
+  background-position: center center;
+  background-size: cover;
 }
 
 /*end fixed footer*/
@@ -245,7 +274,15 @@ body {
   border-radius: 50%;
 }
 .header-contact__soc:hover {
-  transform: scale(1.1);
+  border-color: #85ADD2;
+  background: #85ADD2;
+}
+.header-contact__soc:hover svg {
+  fill: #85ADD2;
+  stroke: #ffffff !important;
+}
+.header-contact__soc:hover svg path {
+  stroke: #fff !important;
 }
 .header-contact__soc:last-child {
   margin: 0;
@@ -254,6 +291,7 @@ body {
   width: 26px;
   height: 26px;
   fill: #fff;
+  transition: all 0.2s ease-in-out;
 }
 .header-contact__soc-wrap {
   display: flex;
@@ -604,10 +642,55 @@ body {
   display: flex;
   gap: 46px;
 }
+.bottom-contact {
+  display: flex;
+  align-items: center;
+}
+.bottom-contact__tel {
+  font-size: 32px;
+  line-height: 27px;
+  position: relative;
+  margin-right: 80px;
+  font-weight: 600;
+}
+.bottom-contact__tel:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  background: #979797;
+  transition: all 0.2s ease-in-out;
+}
+.bottom-contact__tel:hover:before {
+  width: 100%;
+  left: 0;
+}
+.bottom-contact__soc {
+  transition: all 0.2s ease-in-out;
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid #272727;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18px;
+}
+.bottom-contact__soc svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+
 .connect {
   font-weight: 600;
   width: 100%;
   font-size: 22px;
+}
+
+.connect2 {
   border-top: 1px solid #272727;
   padding-top: 50px;
 }
@@ -645,6 +728,18 @@ body {
 .qw {
   align-items: flex-start;
   flex-direction: column;
+}
+
+.foot {
+  padding: 140px 0;
+  margin: 0;
+}
+.foot .article-col__info {
+  display: flex;
+  flex-direction: column;
+}
+.foot .article-col {
+  align-items: center;
 }
 
 @media only screen and (max-width: 1200px) {
