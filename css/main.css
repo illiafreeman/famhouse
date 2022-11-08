@@ -834,7 +834,71 @@ body {
 @media only screen and (max-width: 1200px) {
   .container {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .header {
+    position: relative;
+    padding: 18px 0 0;
+    margin-bottom: 68px;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 29px;
+    margin-bottom: 26px;
+  }
+  .intro__pic {
+    margin: 0 -20px 68px !important;
+    max-width: calc(100% + 40px);
+  }
+  .intro__desc {
+    flex-direction: column;
+  }
+  .intro__desc-item {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+  .intro__desc-item:last-child {
+    margin-bottom: 0;
+  }
+  .intro__desc-title {
+    font-size: 32px;
+    line-height: 35px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  body {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .article {
+    margin-bottom: 68px;
+  }
+  .article-col {
+    flex-direction: column;
+  }
+  .article-col__info {
+    padding-top: 68px;
+  }
+  .article-col__list {
+    margin-bottom: 42px;
+  }
+  .article-col__list li {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .article-col__pic {
+    margin: 0 -20px !important;
+    width: calc(100% + 40px);
+    max-width: calc(100% + 40px);
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=main.css.map */
