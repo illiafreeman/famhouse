@@ -4148,10 +4148,14 @@ body {
     height: 107px;
   }
   .scroll-top3.vis {
-    bottom: 20px;
+    bottom: 155px;
     right: 20px;
     width: 30px;
     height: 30px;
+  }
+  .scroll-top3.vis svg {
+    width: 16px;
+    height: 12px;
   }
   .bottom-contact {
     flex-wrap: wrap;
@@ -4244,7 +4248,7 @@ body {
     left: 0;
     right: 0;
     background: #fff;
-    padding: 20px;
+    padding: 46px 20px;
     gap: 40px;
   }
   .header-nav {
