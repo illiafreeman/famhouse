@@ -47,12 +47,14 @@ $(document).ready(function() {
         $('.scroll-top').removeClass('none');
     });
     $(".phone").mask("+7 (999) 999-99-99");
+    if($(window).width() > 1023){
+        alert('asd')
+        
+    }
 });
 $( window ).on( "load", function() {
 
-    if($(window).width() > 1023){
-        new WOW().init();
-    }
+    new WOW().init();
 
 });
 

@@ -151,16 +151,15 @@
 .scroll-top3.vis {
     bottom: 155px;
     right: 20px;
-    width: 30px;
-    height: 30px;
+    width: 46px;
+    height: 46px;
     svg{
         width: 16px;
         height: 12px;
     }
 }
 .bottom-contact{
-    flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
 }
 .bottom-contact__tel{
@@ -278,8 +277,17 @@
 .article.article_bg.foot{
     padding-bottom: 68px;
 }
+.bottom-contact__tel {
+    font-size: 20px;
+    line-height: 19px;
+    position: relative;
+    margin: 0;
+    font-weight: 600;
+  }
+  .bottom-contact__soc {
 
-
+    min-width: 48px;
+  }
 
 }
 
