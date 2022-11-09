@@ -1090,6 +1090,19 @@ body {
     gap: 24px;
   }
 }
+@media only screen and (max-width: 780px) {
+  .slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+  .slick-prev svg, .slick-next svg {
+    width: 20px;
+    height: 12px;
+  }
+  .close {
+    right: 21px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .footer__logo {
     width: 60px;
