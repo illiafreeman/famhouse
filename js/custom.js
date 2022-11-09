@@ -48,7 +48,13 @@ $(document).ready(function() {
     });
     $(".phone").mask("+7 (999) 999-99-99");
 });
+$( window ).on( "load", function() {
 
+    if($(window).width() > 1023){
+        new WOW().init();
+    }
+
+});
 
 
 
