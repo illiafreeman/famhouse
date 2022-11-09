@@ -4243,12 +4243,13 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 118px;
+    top: 115px;
     left: 0;
     right: 0;
     background: #fff;
     padding: 46px 20px;
     gap: 40px;
+    z-index: 10000;
   }
   .header-nav {
     flex-direction: column;
